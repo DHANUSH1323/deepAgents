@@ -1,2 +1,4 @@
 #Excluding env file
 .env
+.DS_Store
+*.pyc
