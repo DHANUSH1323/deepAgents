@@ -1,17 +1,18 @@
-**DEEPAGENTS**
+🧠 deepAgents
 
-deepAgents is a from scratch exploration of stateful, graph-based AI agents built using LangGraph + LangChain, with a strong focus on how agents actually work internally.
+deepAgents is a from-scratch exploration of stateful, graph-based AI agents built using LangGraph + LangChain, with a strong focus on how agents actually work internally.
 
 Instead of hiding complexity behind abstractions, this repo makes agent state, planning, memory, and execution explicit and inspectable.
 
 If you want to understand what really happens inside an agent loop, this repo is for you.
 
+⸻
 
-Why this repo exists
+🚀 Why this repo exists
 
 Most “agent” examples online:
 	•	hide state mutations
-	•	blur steps into a single black box loop
+	•	blur steps into a single black-box loop
 	•	rely on magic wrappers
 
 deepAgents takes the opposite approach.
@@ -22,24 +23,27 @@ This repo is about:
 	•	reducers for safe state merging
 	•	task planning via TODOs
 	•	virtual file systems inside agent memory
-	•	tool driven state updates
-	•	sub agents and composition
+	•	tool-driven state updates
+	•	sub-agents and composition
 
 In short: agents as engineered systems, not demos.
 
-What you’ll learn from this repo
+⸻
 
-Agent state, done properly
+🧩 What you’ll learn from this repo
+
+1️⃣ Agent state, done properly
 
 You’ll see how to extend LangGraph’s AgentState to include:
 	•	structured TODO lists
-	•	long lived virtual files
+	•	long-lived virtual files
 	•	safe merging via reducers
 
-This enables long running, recoverable agents.
+This enables long-running, recoverable agents.
 
+⸻
 
-**Task planning with TODOs**
+2️⃣ Task planning with TODOs
 
 Agents don’t just “respond”. They:
 	•	create tasks
@@ -49,8 +53,9 @@ Agents don’t just “respond”. They:
 
 This mirrors how humans work and makes agent behavior debuggable.
 
+⸻
 
-**Virtual file system inside agent memory**
+3️⃣ Virtual file system inside agent memory
 
 Instead of bloating prompts:
 	•	agents write intermediate results to files
@@ -59,28 +64,31 @@ Instead of bloating prompts:
 
 This is context offloading, not prompt stuffing.
 
+⸻
 
-**Tool driven state mutation**
+4️⃣ Tool-driven state mutation
 
-Tools are first class citizens:
+Tools are first-class citizens:
 	•	tools can read/write TODOs
 	•	tools can read/write files
 	•	tools can return Commands to mutate state
 
 State changes are explicit and auditable.
 
+⸻
 
-**Sub agents and composition**
+5️⃣ Sub-agents and composition
 
 Agents can:
 	•	delegate work
 	•	call other agents
 	•	merge results back into shared state
 
-This sets the foundation for multi agent systems.
+This sets the foundation for multi-agent systems.
 
+⸻
 
-Repository structure
+📁 Repository structure
 
 deepAgents/
 ├── src/deepAgents/
@@ -103,9 +111,11 @@ deepAgents/
 └── README.md
 
 
-Notebook walkthrough
+⸻
 
-Each notebook builds on the previous one:
+📓 Notebook walkthrough
+
+Each notebook builds on the previous one.
 
 0_create_agent.ipynb
 	•	Create a basic LangGraph agent
@@ -123,16 +133,18 @@ Each notebook builds on the previous one:
 	•	Demonstrate reducer-based merging
 
 3_subagents.ipynb
-	•	Introduce sub agents
+	•	Introduce sub-agents
 	•	Delegate tasks
 	•	Merge results back into parent state
 
 4_full_agent.ipynb
 	•	Compose everything together
-	•	A realistic, stateful, multi step agent
+	•	A realistic, stateful, multi-step agent
 	•	Clear separation of planning, execution, and memory
 
-Design philosophy
+⸻
+
+🧠 Design philosophy
 
 Agents are not magic.
 They are state machines powered by language models.
@@ -142,19 +154,22 @@ This repo treats agents as:
 	•	inspectable graphs, not loops
 	•	evolving state, not stateless chats
 
-Who this repo is for
+⸻
+
+👀 Who this repo is for
 
 This repo is ideal if you are:
 	•	learning LangGraph deeply
 	•	building custom agent frameworks
 	•	experimenting with agent memory and planning
 	•	preparing for AI / LLM / agent interviews
-	•	tired of black box “agent wrappers”
+	•	tired of black-box “agent wrappers”
 
 This is not a beginner chatbot tutorial.
 
+⸻
 
-Status
+🚧 Status
 
 This is an active learning and experimentation repo.
 
@@ -167,14 +182,18 @@ Planned explorations:
 
 Breaking changes are expected.
 
+⸻
 
-If this repo helps you
+⭐ If this repo helps you
 
 If this repo helped you:
 	•	understand agents better
 	•	debug LangGraph concepts
 	•	think more clearly about agent design
 
-Give it a star and build something weird with it.
+Give it a ⭐ and build something weird with it.
 
 That’s the goal.
+	•	add badges (LangGraph, LangChain, Anthropic)
+
+Just tell me.
