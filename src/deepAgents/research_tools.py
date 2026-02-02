@@ -18,8 +18,8 @@ from pydantic import BaseModel, Field
 from tavily import TavilyClient
 from typing_extensions import Annotated, Literal
 
-from deep_agents_from_scratch.prompts import SUMMARIZE_WEB_SEARCH
-from deep_agents_from_scratch.state import DeepAgentState
+from src.deepAgents.prompts import SUMMARIZE_WEB_SEARCH
+from src.deepAgents.state import DeepAgentState
 
 # Summarization model 
 summarization_model = init_chat_model(model="openai:gpt-4o-mini")
